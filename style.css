@@ -1,0 +1,133 @@
+h1 {
+    color: #333;
+}
+body {
+    height:100vh;
+   display: flex;
+   justify-content: center; /* Aligne les éléments sur toute la largeur */
+   align-items: center;         /* Centre verticalement les enfants */
+   background-color: #cadbe3; 
+ 
+}
+
+.p1 {
+    color: hsl(71, 73%, 54%);
+       font-weight: bold;
+}
+.container {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+
+    }
+
+.content{
+padding: 10px;
+font-size: 16px;
+line-height: 7px;
+padding-left: 50px;
+}
+
+.grid{
+    display: flex;
+    width: 100%;
+}
+
+.subscription {
+    background-color: #1eb8a8;
+    padding: 10px;
+    text-align: left;
+    padding-top: 20px;
+    line-height: 5px;
+    font-size: 16px;
+    width: 50%;
+    border-bottom-left-radius: 15px;
+    padding-left: 30px;
+}
+
+.price {
+    font-weight: bold;
+    flex: 1;
+    color: #fff;
+    font-size: 2rem;
+
+}
+
+.color{
+    color: #fff;
+    line-height: 1.5;
+}
+
+span {
+font-weight: 100;
+font-size: 1rem;
+color: #fff;
+}
+
+.why-us{
+    background-color: #43d6c7 ;
+    padding: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+    padding-left: 30px;
+    width: 50%;
+    border-bottom-right-radius: 15px;
+
+}
+
+.why-us h4{
+    color: #fff;
+    line-height: 1.5;
+
+}
+
+.why-us ul {
+  list-style-type: none;
+  padding-left: 0; /* Supprime le retrait à gauche */
+}
+
+.interligne {
+    line-height: 1.5;
+}
+button {
+    width: 90%; 
+    background-color: #c4f13b;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5%;
+}
+
+button:hover{
+    background-color: #b3df2f;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 12em;
+    width: 100%;
+  }
+
+  .content {
+    width: 100% !important;
+    
+  }
+  .grid {
+    flex-direction: column;
+  }
+
+  .subscription,
+  .why-us {
+    width: 95%;
+    border-radius: 0;
+  }
+
+  .why-us {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+}
