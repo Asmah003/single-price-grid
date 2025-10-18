@@ -1,0 +1,18 @@
+## EXERCICE3_P1_SINGLE_PRICE_GRID
+
+cet exercice  m'a permis de réaliser mon tout premier projet en language HTML et CSS grâce à quelques bases que j'ai et à des recherches.
+
+ ce projet est une implémentation d'un composant de grille de tarification simple et responsive.
+
+la partie qui à été un plus compliquer lors de la réalisation, etait la responsivité (CSS) qui neccissite de faire adapter la page à tous les ecrans!
+
+## Capture d'ecran:
+
+![APERCU](./image_grid.png)
+
+## LIEN:
+
+![Démo](https://asmah003.github.io/single-price-grid/)
+
+
+
