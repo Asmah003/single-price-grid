@@ -12,7 +12,7 @@ la partie qui à été un plus compliquer lors de la réalisation, etait la resp
 
 ## LIEN:
 
-![Démo](https://asmah003.github.io/single-price-grid/)
+[Démo](https://asmah003.github.io/single-price-grid/)
 
 
 
