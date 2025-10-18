@@ -1,51 +1,60 @@
-h1 {
-    color: #333;
-}
-body {
-    height:100vh;
+  body {
+   height:100vh;
    display: flex;
    justify-content: center; /* Aligne les éléments sur toute la largeur */
    align-items: center;         /* Centre verticalement les enfants */
-   background-color: #cadbe3; 
- 
+   background-color: #cadbe3;  
+
 }
 
-.p1 {
+   h1 {
+    color: #333;                                              
+
+}
+
+   .p1 {
     color: hsl(71, 73%, 54%);
        font-weight: bold;
+       margin-bottom: 15px
+
 }
-.container {
+
+   .container {
     background-color: #fff;
     font-family: Arial, sans-serif;
     border-radius: 15px;
+     /* width: 100%; */
+     overflow-x: hidden;
 
     }
 
-.content{
-padding: 10px;
-font-size: 16px;
-line-height: 7px;
-padding-left: 50px;
+   .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   font-size: 16px;
+   padding: 50px;
+
 }
 
-.grid{
+   .grid{
     display: flex;
     width: 100%;
+
 }
 
-.subscription {
+   .subscription {
     background-color: #1eb8a8;
-    padding: 10px;
-    text-align: left;
-    padding-top: 20px;
+    padding: 25px;
     line-height: 5px;
     font-size: 16px;
-    width: 50%;
+    /* width: 50%; */
+    flex: 1;
     border-bottom-left-radius: 15px;
-    padding-left: 30px;
+
 }
 
-.price {
+    .price {
     font-weight: bold;
     flex: 1;
     color: #fff;
@@ -53,81 +62,278 @@ padding-left: 50px;
 
 }
 
-.color{
+    .color{
     color: #fff;
     line-height: 1.5;
+
 }
 
-span {
-font-weight: 100;
-font-size: 1rem;
-color: #fff;
+   span {
+   font-weight: 100;
+   font-size: 1rem;
+   color: #fff;
+
 }
 
-.why-us{
+   .why-us{
     background-color: #43d6c7 ;
-    padding: 10px;
-    padding-top: 5px;
+   padding: 25px;
+    line-height: 5px;
     font-size: 16px;
-    padding-left: 30px;
-    width: 50%;
+    /* width: 50%; */
+    flex: 1;
     border-bottom-right-radius: 15px;
 
 }
 
-.why-us h4{
+  .why-us h3{
     color: #fff;
     line-height: 1.5;
 
 }
 
-.why-us ul {
+  .why-us ul {
   list-style-type: none;
   padding-left: 0; /* Supprime le retrait à gauche */
+
 }
 
-.interligne {
-    line-height: 1.5;
+  .interligne {
+    /* line-height: 1.5; */
+
 }
-button {
-    width: 90%; 
+   button {
+    width: 100%; 
     background-color: #c4f13b;
     border: none;
     border-radius: 5px;
     padding: 10px;
     font-size: 1rem;
     margin-top: 5%;
+
 }
 
-button:hover{
+   button:hover{
     background-color: #b3df2f;
     cursor: pointer;
+
 }
 
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
   .container {
     margin-top: 12em;
     width: 100%;
+     margin: 0;
+     
+
   }
 
   .content {
     width: 100% !important;
+    /* padding-right: 0; */
     
   }
   .grid {
     flex-direction: column;
+
   }
 
   .subscription,
   .why-us {
-    width: 95%;
+    width: 93.5%;
+    /* padding-left: 27.5px; */
     border-radius: 0;
+
   }
 
   .why-us {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+
   }
 
 }
+
+   @media (max-width: 425px) {
+
+  .container {
+    margin-top: 12em;
+    width: 100%;
+     margin: 0%;
+
+}
+
+.content {
+    width: 100% !important;
+    /* padding-left: 3px; */
+    line-height: 1.5;
+    
+  }
+
+  .contenu {
+    padding-left: 35px;
+  }
+
+  .grid {
+    flex-direction: column;
+
+  }
+
+  .sub {
+    padding-left: 35px;
+  }
+
+  .why {
+    padding-left: 35px;
+  }
+
+  .subscription,
+  .why-us {
+    width: 91.5% !important;
+    padding-left: 11px;
+    border-radius: 0;
+    ;
+  }
+
+  .why-us {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+  }
+
+}
+
+   @media (max-width: 425px) {
+
+   .container {
+    margin-top: 12em;
+    width: 100%;
+     margin: 0%;
+
+}
+
+   .content {
+    width: 100% !important;
+    padding-left: 3px;
+    line-height: 1.5;
+    
+  }
+
+   .grid {
+    flex-direction: column;
+
+  }
+
+  .subscription,
+  .why-us {
+    width: 95%;
+    padding-left: 10.5px;
+    border-radius: 0;
+    ;
+  }
+
+  .why-us {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+  }
+   button{
+   margin-right: 0.5rem;
+   width: 90%;
+}
+}
+
+   @media (max-width: 320px) {
+  
+   .container {
+    margin-top: 12em;
+    width: 100%;
+    margin: 0%;
+
+}
+
+   .content {
+    width: 100% !important;
+    line-height: 1.5;
+  }
+
+   .contenu {
+    padding-left: 20px;
+  }
+   .sub {
+    padding-left: 20px;
+  }
+   .sub button {
+    margin-bottom: 20px;
+  }
+
+  .why {
+    padding-left: 20px;
+  }
+
+
+  .grid {
+
+    flex-direction: column;
+
+  }
+
+  .subscription
+  {
+    padding: 0;
+    width: 97.5% !important;
+    border-radius: 0;
+    flex: 1
+  }
+
+  .why-us {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 90.5% !important;
+    /* padding-right: 0.5em; */
+
+  }
+
+}
+
+   @media (max-width: 375px) {
+
+  .container {
+    margin-top: 12em;
+    width: 100%;
+     margin: 0%;
+
+}
+
+   .content {
+    width: 100% !important;
+    padding-left: 1px;
+    line-height: 1.5;
+    
+  }
+
+   .contenu {
+    padding-right: 10px;
+  }
+
+   .grid {
+    flex-direction: column;
+
+  }
+
+   .subscription,
+   .why-us {
+    width: 95%;
+    padding-left: 8px;
+    border-radius: 0;
+    ;
+  }
+
+   .why-us {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+  }
+
+  }
