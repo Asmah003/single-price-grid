@@ -10,6 +10,12 @@ la partie qui à été un plus compliquer lors de la réalisation, etait la resp
 
 ![APERCU](./image_grid.png)
 
+![APERCU](./image_grid_2.png)
+
+![APERCU](./image_grid_3.png)
+
+![APERCU](./image_grid_4.png)
+
 ## LIEN:
 
 [Démo](https://asmah003.github.io/single-price-grid/)
